@@ -9,8 +9,10 @@
 }
 
 body {
-    background: rgb(111,112,120);
-    background: linear-gradient(to top, #0f0c29, #302b63, #24243e);
+    background-image: url('../img/colorful_waves_chromatic_gradient_silk_3d_spectrum_4k_hd_abstract.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
     font-family: 'Montserrat', sans-serif;
     margin-top:2vw;
     min-height: 800px;
