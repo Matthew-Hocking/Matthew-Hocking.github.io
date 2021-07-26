@@ -23,92 +23,98 @@
 
         <main>
             <div id="home-content">
-            <h1 class="title">JavaScript and the DOM</h1>
-            <p>
-                In Web development we have three things: HTML, CSS, and JavaScript. They are 3 different languages, but they need to work together.
-            </p>
-            <p>
-                HTML without CSS would just look like a word document on your page. CSS is the information that tells your browser how all the HTML content should look on your page. HTML equals structure, CSS equals style. Imagine you were going to build a building. You need to hire a team to work on their special fields to culminate in the completion of your building. 
-            </p>
-            <ul>
-                <li>
-                    You hire a builder; this is the HTML. They are going to build the structure of your building. floors, walls, roof, basement, they build it all. On a webpage this can be seen as the written content, the images, the links etc.
-                </li>
-                <li>
-                    Next you need is a Stylist; this is the CSS. They are going to paint the walls, pick your carpet, plants etc. they dictate how your building is going to look when you visit. On your page this can be seen as fonts, colours, shapes, sizes, how buttons look etc.
-                </li>
-                <li>
-                    Lastly you need a tradie; this is the JavaScript. They could do the plumbing, install the wiring for electricity, hook up the gas, their job is to make the building functional and usable by tenants and guests. On your page imagine this as all your interactive aspects; Search-boxes, drop-menus etc.
-                </li>
-            </ul>          
-            <p>
-                All together your 3 team members all have their own roles in making that building, and so in web development those 3 sources of information, HTML, CSS, and JavaScript culminate in completion of your page.
-            </p>
-            <h1 class="title">Control Flow</h1>
-            <p>
-                Control Flow is the order in which your computer reads and executes instructions or functions in your script. Your computer reads all the information very much the same way we do: Left to right, top to bottom. But in JavaScript we often manipulate and change that natural workflow to execute special tasks.
-            </p>
-            <p>
-                For example, loops; now there are many different types of loops, but they all have the same principle. Loops are used to perform repeated tasks based on a condition. These conditions typically run on true or false statements, imagine these true and false statements behave as a switch, on or off. These conditions can dictate if the loop needs to be re-executed over and over or stop once the condition has been met and continue with the control flow.
-            </p>
-            <p>
-                Imagine you have the task of washing dishes, this is your function. You grab a dish, put it in the sink and start scrubbing. Once you have finished scrubbing the dish you look at it to see if it is clean, if it is not clean, you continue scrubbing, and you repeat this process until it is. Now that it is, you can continue onto the next dish, this is your loop. Once all the dishes are clean, you have completed your function.
-            </p>
-            <p>
-                Now functions are one of the main reasons we have JavaScript. A function can be described as a procedure, and the purpose of the procedure is to take input and give an output. 
-            </p>
-            <h1 class="title"> The DOM</h1>
-            <p>
-                The DOM stands for Document Object Model and can be described as an Application Programming Interface (or API). Moving aside from the multiple scary sounding acronyms, this just means that the DOM is a way we can interact with or web pages; we can add, delete, or change HTML content. Now we can interact and make these changes to our web page live while we view our web page and witness these changes immediately in our web browser. Let’s break it down.
-            </p>
-            <ul>
-                <li>
-                    The Document – The document is just the web page. this web page can be viewed either through your browser or the html file in a text editor, either way this is the document the DOM sees.
-                </li>
-                <li>
-                    The Objects – The objects are the elements within your HTML file; head, body, paragraph etc. Any tag in your HTML file is an object in the eyes of your DOM. It is these objects that JavaScript works so well with.   
-                </li>
-                <li>
-                    The Model – The model is a logical structure used to describe the tree like nature of the HTML document. What we see in the model representation are nodes, and they are everything we can change within a document.
-                </li>
-            </ul>
-            <p>
-                What we can do with the DOM now is change many different things about our nodes. For example, we can change text nodes, background colour of element nodes, or even expand element nodes when we click on it, and so much more. 
-            </p>
-            <h1 class="title">Objects and Arrays</h1>
-            <p>
-                Objects and arrays on the surface are quite similar; they are both special forms of data in JavaScript, Mutable, and can be used to store a collection of data. So how do we tell the difference between objects and arrays, and when and why do we use one over the other?
-            </p>
-            <p>
-                As the name implies, we use Objects to represent “things” in our code, anything that can be defined by several characteristics like a person, or an album. These characteristics are what we call properties, defined by a key and its value.
-            </p>
-            <pre>
-                Var Matthew = {
-                    Age: ‘26’
-                    Hair: ‘Brown’
-                    Beard: ‘Awesome’
-                };                 
-            </pre>
-            <p>
-                These properties can be accessed and manipulated by using either dot or bracket notation.
-            </p>
-            <pre>
-                Matthew.Beard
-                    //or
-                Matthew[‘Beard’]
-                    // both return ‘Awesome
-            </pre>
-            <p>
-                Arrays are better used whenever we want to create and store a list of multiple items in a single variable, especially when we want to create a list which can be accessed by their numerical position on the list (0,1,2 etc). Just like objects’ properties, arrays can store values of any primitive data type; strings, numbers, Booleans, objects or even other arrays.
-            </p>
-            <pre>
-                Var matthewHobbies = [‘Writing Music’, ‘Video Games’, ‘Cooking’]
-                // To access these items, we start by counting the first item from 0
-                matthewHobbies[0]; // returns ‘Writing Music’
-            </pre>
-            <p>
-                Objects store properties like characteristics of a “thing”, while arrays create and store lists of data in a single variable. Both dot and bracket notation allow us to access items from an object while zero-based indexing let us access and alter item from an array.
-            </p>
+                <h1 class="title">JavaScript and the DOM</h1>
+                <p>
+                    In Web development we have three things: HTML, CSS, and JavaScript. They are 3 different languages, but they need to work together.
+                </p>
+                <p>
+                    HTML without CSS would just look like a word document on your page. CSS is the information that tells your browser how all the HTML content should look on your page. HTML equals structure, CSS equals style. Imagine you were going to build a building. You need to hire a team to work on their special fields to culminate in the completion of your building. 
+                </p>
+                <ul>
+                    <li>
+                        You hire a builder; this is the HTML. They are going to build the structure of your building. floors, walls, roof, basement, they build it all. On a webpage this can be seen as the written content, the images, the links etc.
+                    </li>
+                    <li>
+                        Next you need is a Stylist; this is the CSS. They are going to paint the walls, pick your carpet, plants etc. they dictate how your building is going to look when you visit. On your page this can be seen as fonts, colours, shapes, sizes, how buttons look etc.
+                    </li>
+                    <li>
+                        Lastly you need a tradie; this is the JavaScript. They could do the plumbing, install the wiring for electricity, hook up the gas, their job is to make the building functional and usable by tenants and guests. On your page imagine this as all your interactive aspects; Search-boxes, drop-menus etc.
+                    </li>
+                </ul>          
+                <p>
+                    All together your 3 team members all have their own roles in making that building, and so in web development those 3 sources of information, HTML, CSS, and JavaScript culminate in completion of your page.
+                </p>
+            </div>
+            <div id="home-content">
+                <h1 class="title">Control Flow</h1>
+                <p>
+                    Control Flow is the order in which your computer reads and executes instructions or functions in your script. Your computer reads all the information very much the same way we do: Left to right, top to bottom. But in JavaScript we often manipulate and change that natural workflow to execute special tasks.
+                </p>
+                <p>
+                    For example, loops; now there are many different types of loops, but they all have the same principle. Loops are used to perform repeated tasks based on a condition. These conditions typically run on true or false statements, imagine these true and false statements behave as a switch, on or off. These conditions can dictate if the loop needs to be re-executed over and over or stop once the condition has been met and continue with the control flow.
+                </p>
+                <p>
+                    Imagine you have the task of washing dishes, this is your function. You grab a dish, put it in the sink and start scrubbing. Once you have finished scrubbing the dish you look at it to see if it is clean, if it is not clean, you continue scrubbing, and you repeat this process until it is. Now that it is, you can continue onto the next dish, this is your loop. Once all the dishes are clean, you have completed your function.
+                </p>
+                <p>
+                    Now functions are one of the main reasons we have JavaScript. A function can be described as a procedure, and the purpose of the procedure is to take input and give an output. 
+                </p>
+            </div>
+            <div id="home-content">
+                <h1 class="title"> The DOM</h1>
+                <p>
+                    The DOM stands for Document Object Model and can be described as an Application Programming Interface (or API). Moving aside from the multiple scary sounding acronyms, this just means that the DOM is a way we can interact with or web pages; we can add, delete, or change HTML content. Now we can interact and make these changes to our web page live while we view our web page and witness these changes immediately in our web browser. Let’s break it down.
+                </p>
+                <ul>
+                    <li>
+                        The Document – The document is just the web page. this web page can be viewed either through your browser or the html file in a text editor, either way this is the document the DOM sees.
+                    </li>
+                    <li>
+                        The Objects – The objects are the elements within your HTML file; head, body, paragraph etc. Any tag in your HTML file is an object in the eyes of your DOM. It is these objects that JavaScript works so well with.   
+                    </li>
+                    <li>
+                        The Model – The model is a logical structure used to describe the tree like nature of the HTML document. What we see in the model representation are nodes, and they are everything we can change within a document.
+                    </li>
+                </ul>
+                <p>
+                    What we can do with the DOM now is change many different things about our nodes. For example, we can change text nodes, background colour of element nodes, or even expand element nodes when we click on it, and so much more. 
+                </p>
+            </div>
+            <div id="home-content">
+                <h1 class="title">Objects and Arrays</h1>
+                <p>
+                    Objects and arrays on the surface are quite similar; they are both special forms of data in JavaScript, Mutable, and can be used to store a collection of data. So how do we tell the difference between objects and arrays, and when and why do we use one over the other?
+                </p>
+                <p>
+                    As the name implies, we use Objects to represent “things” in our code, anything that can be defined by several characteristics like a person, or an album. These characteristics are what we call properties, defined by a key and its value.
+                </p>
+                <pre>
+                    Var Matthew = {
+                        Age: ‘26’
+                        Hair: ‘Brown’
+                        Beard: ‘Awesome’
+                    };                 
+                </pre>
+                <p>
+                    These properties can be accessed and manipulated by using either dot or bracket notation.
+                </p>
+                <pre>
+                    Matthew.Beard
+                        //or
+                    Matthew[‘Beard’]
+                        // both return ‘Awesome
+                </pre>
+                <p>
+                    Arrays are better used whenever we want to create and store a list of multiple items in a single variable, especially when we want to create a list which can be accessed by their numerical position on the list (0,1,2 etc). Just like objects’ properties, arrays can store values of any primitive data type; strings, numbers, Booleans, objects or even other arrays.
+                </p>
+                <pre>
+                    Var matthewHobbies = [‘Writing Music’, ‘Video Games’, ‘Cooking’]
+                    // To access these items, we start by counting the first item from 0
+                    matthewHobbies[0]; // returns ‘Writing Music’
+                </pre>
+                <p>
+                    Objects store properties like characteristics of a “thing”, while arrays create and store lists of data in a single variable. Both dot and bracket notation allow us to access items from an object while zero-based indexing let us access and alter item from an array.
+                </p>
             </div>
         </main>
     </body>
